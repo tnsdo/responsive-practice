@@ -235,7 +235,11 @@ const App = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              {/* SVG Path Data는 생략 */}
+              <path
+                d="M1 1.5L6 6.5L1 11.5"
+                stroke="#B1B8C0"
+                strokeWidth="1.5"
+              />
             </svg>
           </Frame7>
           <Frame11>
