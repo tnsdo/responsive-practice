@@ -14,7 +14,6 @@ const Frame2 = styled.div`
   max-width: 390px;
   border: 16px solid #333;
   border-radius: 36px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   background-color: #fff;
   overflow: hidden;
   display: flex;
