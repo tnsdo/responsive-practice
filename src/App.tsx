@@ -16,6 +16,13 @@ const Display = styled.div`
   margin: auto;
   align-items: center;
   background-color: #f2f4f6;
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+  @media (min-width: 400px) {
+    width: 100%;
+  }
 `;
 
 const Frame2 = styled.div`
@@ -50,18 +57,22 @@ const Banner = styled.div`
   width: 400px;
   height: 150px;
   position: relative;
+  display: flex;
 
   @media (min-width: 400px) {
+    display: flex;
     width: 100%;
-    padding: 10px;
-    font-size: 1em;
+  }
+  @media (max-width: 400px) {
+    width: 100%;
   }
 `;
 
 const Back = styled.div`
-  width: 360px;
+  width: 90%;
   height: 150px;
   margin: auto;
+  display: flex;
   background-image: url(${image});
   background-size: 500px;
   background-position-x: -100px;
@@ -85,6 +96,13 @@ const Section1 = styled.div`
   width: 400px;
   height: 340px;
   position: relative;
+  display: flex;
+  @media (min-width: 400px) {
+    width: 100%;
+  }
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `;
 
 const Frame6 = styled.div`
@@ -97,6 +115,12 @@ const Frame6 = styled.div`
   background-color: white;
   border-radius: 15px;
   align-items: center;
+  @media (min-width: 400px) {
+    width: 90%;
+  }
+  @media (max-width: 400px) {
+    width: 90%;
+  }
 `;
 
 const Name = styled.div`
@@ -113,9 +137,10 @@ const Frame7 = styled.div`
 `;
 
 const Frame8 = styled.div`
-  object-fit: fill;
   float: right;
-  margin: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  display: flex;
 `;
 
 const Money = styled.div`
@@ -151,7 +176,6 @@ const Tofu = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-right: 100px;
 `;
 
 const Frame11 = styled.div`
@@ -173,6 +197,8 @@ const Frame13 = styled.div`
   background-color: #f2f4f6;
   padding: 8px 16px;
   border-radius: 5px;
+  margin-left: auto;
+  margin-right: 20px;
 `;
 
 const Frame14 = styled.div`
@@ -188,17 +214,6 @@ const Frame14 = styled.div`
   align-items: center;
   margin-left: 20px;
   margin-right: 10px;
-`;
-
-const Frame15 = styled.div`
-  display: flex;
-  float: right;
-  color: #858585;
-  font-size: 13px;
-  background-color: #f2f4f6;
-  padding: 8px 16px;
-  border-radius: 5px;
-  margin-left: 58px;
 `;
 
 const Line = styled.div`
@@ -335,7 +350,7 @@ const App = () => {
                   <Frame11>두부머니</Frame11>
                   <Frame12>800원</Frame12>
                 </Tofu>
-                <Frame15>송금</Frame15>
+                <Frame13>송금</Frame13>
               </Frame9>
             </Money>
             <Line>
