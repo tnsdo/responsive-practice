@@ -50,7 +50,14 @@ const Banner = styled.div`
   width: 400px;
   height: 150px;
   position: relative;
+
+  @media (min-width: 400px) {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+  }
 `;
+
 const Back = styled.div`
   width: 360px;
   height: 150px;
