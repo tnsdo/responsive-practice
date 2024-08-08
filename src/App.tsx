@@ -7,6 +7,10 @@ import logo from "src/assets/logo.svg";
 import pin from "src/assets/pin.svg";
 import styled from "styled-components";
 
+const Bgd = styled.div`
+  background-color: #f2f4f6;
+`;
+
 const Display = styled.div`
   width: 400px;
   margin: auto;
@@ -234,21 +238,20 @@ const Frame18 = styled.div`
 `;
 
 const Frame19 = styled.div`
-  width: 400px;
+  width: 420px;
   height: 165px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
 const Frame20 = styled.div`
-  width: 120px;
+  width: 135px;
   height: 150px;
-  position: absolute;
   background-color: white;
   border-radius: 15px;
-  align-items: center;
   margin-left: 20px;
-  align-items: center;
+  position: relative;
 `;
 
 const Frame21 = styled.div`
@@ -284,80 +287,90 @@ const Frame25 = styled.div`
 
 const App = () => {
   return (
-    <Display>
-      <Frame2>
-        <Frame1>
-          <img src={logo} />
-          <Frame3>
-            <img src={pin} />
-          </Frame3>
-          <Frame4>
-            <img src={cloud} />
-          </Frame4>
-        </Frame1>
-      </Frame2>
-      <Banner>
-        <Back>
-          <Frame5>새로운 두부를 만나 보세요.</Frame5>
-        </Back>
-      </Banner>
-      <Section1>
-        <Frame6>
-          <Name>
-            <Frame7>두부뱅크</Frame7>
-            <Frame8>
-              <img src={arrow} />
-            </Frame8>
-          </Name>
-          <Money>
-            <Frame9>
-              <Frame10>₩</Frame10>
+    <Bgd>
+      <Display>
+        <Frame2>
+          <Frame1>
+            <img src={logo} />
+            <Frame3>
+              <img src={pin} />
+            </Frame3>
+            <Frame4>
+              <img src={cloud} />
+            </Frame4>
+          </Frame1>
+        </Frame2>
+        <Banner>
+          <Back>
+            <Frame5>새로운 두부를 만나 보세요.</Frame5>
+          </Back>
+        </Banner>
+        <Section1>
+          <Frame6>
+            <Name>
+              <Frame7>두부뱅크</Frame7>
+              <Frame8>
+                <img src={arrow} />
+              </Frame8>
+            </Name>
+            <Money>
+              <Frame9>
+                <Frame10>₩</Frame10>
+                <Tofu>
+                  <Frame11>두부머니</Frame11>
+                  <Frame12>2,000,000원</Frame12>
+                </Tofu>
+                <Frame13>송금</Frame13>
+              </Frame9>
+              <Frame9>
+                <Frame14>$</Frame14>
+                <Tofu>
+                  <Frame11>두부머니</Frame11>
+                  <Frame12>800원</Frame12>
+                </Tofu>
+                <Frame15>송금</Frame15>
+              </Frame9>
+            </Money>
+            <Line>
+              <Frame16 />
+            </Line>
+            <Frame17>
+              <Frame18>?</Frame18>
               <Tofu>
-                <Frame11>두부머니</Frame11>
-                <Frame12>2,000,000원</Frame12>
+                <Frame11>공인중개사 합격은</Frame11>
+                <Frame12>에듀윌</Frame12>
               </Tofu>
-              <Frame13>송금</Frame13>
-            </Frame9>
-            <Frame9>
-              <Frame14>$</Frame14>
-              <Tofu>
-                <Frame11>두부머니</Frame11>
-                <Frame12>800원</Frame12>
-              </Tofu>
-              <Frame15>송금</Frame15>
-            </Frame9>
-          </Money>
-          <Line>
-            <Frame16 />
-          </Line>
-          <Frame17>
-            <Frame18>?</Frame18>
-            <Tofu>
-              <Frame11>공인중개사 합격은</Frame11>
-              <Frame12>에듀윌</Frame12>
-            </Tofu>
-          </Frame17>
-        </Frame6>
-      </Section1>
-      <Frame19>
-        <Frame20>
-          <Frame21>
-            <Frame22>내 자산</Frame22>
-            <Frame23>두부자산</Frame23>
-            <Frame24>취합해 보기</Frame24>
-          </Frame21>
-          <Frame25>💰</Frame25>
-        </Frame20>
-        <Frame20>
-          <Frame21>
-            <Frame22>내 자산 아님</Frame22>
-            <Frame23>두부자산</Frame23>
-            <Frame24>취합해 보기</Frame24>
-          </Frame21>
-          <Frame25>💵</Frame25>
-        </Frame20>
-      </Frame19>
-    </Display>
+            </Frame17>
+          </Frame6>
+        </Section1>
+        <Frame19>
+          <Frame20>
+            <Frame21>
+              <Frame22>내 자산</Frame22>
+              <Frame23>두부자산</Frame23>
+              <Frame24>취합해 보기</Frame24>
+            </Frame21>
+            <Frame25>💰</Frame25>
+          </Frame20>
+          <Frame20>
+            <Frame21>
+              <Frame22>내 자산 아님</Frame22>
+              <Frame23>두부자산</Frame23>
+              <Frame24>취합해 보기</Frame24>
+            </Frame21>
+            <Frame25>💵</Frame25>
+          </Frame20>
+          <Frame20>
+            <Frame21>
+              <Frame22>사실 네 자산임</Frame22>
+              <Frame23>두부자산</Frame23>
+              <Frame24>취합해 보기</Frame24>
+            </Frame21>
+            <Frame25>💸</Frame25>
+          </Frame20>
+        </Frame19>
+      </Display>
+    </Bgd>
   );
 };
 
